@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2sl-Hf-thj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XkG-j7-mXL">
+            <objects>
+                <viewController id="2sl-Hf-thj" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjN-Eb-S4F"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dk9-wH-3tU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lJG-vr-rri">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5K-fO-2GK" customClass="IMTextView">
+                                <rect key="frame" x="141" y="55" width="319" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="Kd5-fM-XOa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="2sl-Hf-thj" id="nSB-8Y-Ahf"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdy-fX-ewO">
+                                <rect key="frame" x="141" y="279" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SFy-46-K4l"/>
+                                    <constraint firstAttribute="width" constant="30" id="svd-Uc-xpp"/>
+                                </constraints>
+                                <state key="normal" image="icon1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="2sl-Hf-thj" eventType="touchUpInside" id="Sf1-0F-GQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiF-rJ-12N">
+                                <rect key="frame" x="228" y="279" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TCN-ST-Ffi"/>
+                                    <constraint firstAttribute="width" constant="30" id="TLR-rc-xDE"/>
+                                </constraints>
+                                <state key="normal" image="icon2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="2sl-Hf-thj" eventType="touchUpInside" id="HBE-mQ-84V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-Xn-c87">
+                                <rect key="frame" x="322" y="279" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7ok-IK-q50"/>
+                                    <constraint firstAttribute="width" constant="30" id="yVF-ge-izB"/>
+                                </constraints>
+                                <state key="normal" image="icon3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="2sl-Hf-thj" eventType="touchUpInside" id="MLx-wP-NzK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-uf-ros">
+                                <rect key="frame" x="430" y="279" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="N4f-Qb-PK7"/>
+                                    <constraint firstAttribute="height" constant="30" id="ohs-Pp-3lF"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="2sl-Hf-thj" eventType="touchUpInside" id="hqL-TB-yGC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ahy-Xn-c87" firstAttribute="top" secondItem="F5K-fO-2GK" secondAttribute="bottom" constant="24" id="2xr-8q-oG5"/>
+                            <constraint firstAttribute="centerX" secondItem="F5K-fO-2GK" secondAttribute="centerX" constant="-0.5" id="BG0-Qq-6LZ"/>
+                            <constraint firstItem="Zdy-fX-ewO" firstAttribute="leading" secondItem="F5K-fO-2GK" secondAttribute="leading" id="C7U-8I-0WL"/>
+                            <constraint firstItem="Dk9-wH-3tU" firstAttribute="top" secondItem="F5K-fO-2GK" secondAttribute="bottom" constant="345" id="NHa-B3-UMz"/>
+                            <constraint firstItem="F5K-fO-2GK" firstAttribute="top" secondItem="gjN-Eb-S4F" secondAttribute="bottom" constant="35" id="XbW-nf-lut"/>
+                            <constraint firstItem="MiF-rJ-12N" firstAttribute="leading" secondItem="Zdy-fX-ewO" secondAttribute="trailing" constant="57" id="ZP7-uU-LFf"/>
+                            <constraint firstItem="ag1-uf-ros" firstAttribute="top" secondItem="F5K-fO-2GK" secondAttribute="bottom" constant="24" id="bK2-Jy-baf"/>
+                            <constraint firstItem="ag1-uf-ros" firstAttribute="leading" secondItem="ahy-Xn-c87" secondAttribute="trailing" constant="78" id="mXJ-41-2nP"/>
+                            <constraint firstItem="F5K-fO-2GK" firstAttribute="trailing" secondItem="ag1-uf-ros" secondAttribute="trailing" id="pR1-65-Jam"/>
+                            <constraint firstItem="Zdy-fX-ewO" firstAttribute="top" secondItem="F5K-fO-2GK" secondAttribute="bottom" constant="24" id="upY-h0-O74"/>
+                            <constraint firstItem="MiF-rJ-12N" firstAttribute="top" secondItem="F5K-fO-2GK" secondAttribute="bottom" constant="24" id="wyH-li-Odj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="F5K-fO-2GK" id="KlX-82-Q0J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-jv-rbE" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon1.png" width="128" height="128"/>
+        <image name="icon2.png" width="128" height="128"/>
+        <image name="icon3.png" width="128" height="128"/>
+        <image name="icon4.png" width="128" height="128"/>
+    </resources>
+</document>
