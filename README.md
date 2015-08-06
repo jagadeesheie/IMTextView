@@ -8,6 +8,10 @@ iOS 7.0+
 
 # Installation
 
+From <b>CocoaPods</b> :
+pod 'IMTextView'
+
+Without <b>CocoaPods</b> :
 Add IMTextView.h,IMTextView.m, IMTextAttachment.h,IMTextAttachment.m files to your project.
 
 # Usage
