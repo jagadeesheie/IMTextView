@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "IMTextView"
   s.version      = "1.0"
-  s.summary      = "A short description of IMTextView."
+  s.summary      = "An iOS textview with customized icons."
 
   s.description  = <<-DESC
                    A longer description of IMTextView in Markdown format.
