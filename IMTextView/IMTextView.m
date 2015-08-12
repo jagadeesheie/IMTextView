@@ -97,6 +97,16 @@ UIFont *font;
 }
 
 
+-(void) setText:(NSString *)text {
+    
+    self.attributedText= [[NSAttributedString alloc] initWithString:@""];
+    
+    
+    pasteString = [[NSMutableAttributedString alloc] initWithString:text];
+    [self pasteContent];
+}
+
+
 -(NSString*)textContent {
     
     
